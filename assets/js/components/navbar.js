@@ -110,13 +110,13 @@ class CustomNavbar extends HTMLElement {
               <path d="M3 12L12 17L21 12" stroke="var(--gold)" stroke-width="2"/>
               <path d="M3 17L12 22L21 17" stroke="var(--gold)" stroke-width="2"/>
             </svg>
-            <span>°ÅÀûÀñÆ·</span>
+            <span>èŠ­åˆ©ç¤¼å“</span>
           </a>
           <div class="nav-links">
-            <a href="/" class="nav-link ${window.location.pathname === '/' ? 'active' : ''}">Ê×Ò³</a>
-            <a href="/categories.html" class="nav-link ${window.location.pathname.includes('categories') ? 'active' : ''}">ÀñÆ··ÖÀà</a>
-            <a href="/business.html" class="nav-link ${window.location.pathname.includes('business') ? 'active' : ''}">ÆóÒµ·þÎñ</a>
-            <a href="/about.html" class="nav-link ${window.location.pathname.includes('about') ? 'active' : ''}">¹ØÓÚÎÒÃÇ</a>
+            <a href="/" class="nav-link ${window.location.pathname === '/' ? 'active' : ''}">é¦–é¡µ</a>
+            <a href="/categories.html" class="nav-link ${window.location.pathname.includes('categories') ? 'active' : ''}">ç¤¼å“åˆ†ç±»</a>
+            <a href="/business.html" class="nav-link ${window.location.pathname.includes('business') ? 'active' : ''}">ä¼ä¸šæœåŠ¡</a>
+            <a href="/about.html" class="nav-link ${window.location.pathname.includes('about') ? 'active' : ''}">å…³äºŽæˆ‘ä»¬</a>
 </div>
 <div class="nav-actions">
             <button class="action-btn">
@@ -128,9 +128,9 @@ class CustomNavbar extends HTMLElement {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.70711 15.2929C4.07714 15.9229 4.52331 17 5.41421 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span>¹ºÎï³µ</span>
+              <span>è´­ç‰©è½¦</span>
             </button>
-            <div class="user-avatar">µÇ</div>
+            <div class="user-avatar">ç™»</div>
           </div>
         </nav>
       </div>

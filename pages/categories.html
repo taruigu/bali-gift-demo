@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="GBK">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÀñÆ··ÖÀà | °ÅÀûÀñÆ·¶Ò»»Æ½Ì¨</title>
+    <title>ç¤¼å“åˆ†ç±» | èŠ­åˆ©ç¤¼å“å…‘æ¢å¹³å°</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="components/gift-card.js"></script>
-    <script src="components/category-card.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/footer.js"></script>
+    <script src="../assets/js/components/gift-card.js"></script>
+    <script src="../assets/js/components/category-card.js"></script>
 </head>
 <body>
     <custom-navbar></custom-navbar>
@@ -19,11 +19,11 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Ì½Ë÷¾«ÃÀÀñÆ··ÖÀà</h1>
-                    <p>´Ó·á¸»Æ·ÀàÖÐÌôÑ¡ÄúµÄ×¨ÊôÀñÆ·</p>
+                    <h1>æŽ¢ç´¢ç²¾ç¾Žç¤¼å“åˆ†ç±»</h1>
+                    <p>ä»Žä¸°å¯Œå“ç±»ä¸­æŒ‘é€‰æ‚¨çš„ä¸“å±žç¤¼å“</p>
                     <div class="search-box">
-                        <input type="text" placeholder="ËÑË÷·ÖÀàÄÚµÄÀñÆ·...">
-                        <button class="search-btn">ËÑË÷</button>
+                        <input type="text" placeholder="æœç´¢åˆ†ç±»å†…çš„ç¤¼å“...">
+                        <button class="search-btn">æœç´¢</button>
                     </div>
                 </div>
             </div>
@@ -32,45 +32,45 @@
         <!-- All Categories -->
         <section class="categories">
             <div class="container">
-                <h2 class="section-title">ËùÓÐ·ÖÀà</h2>
+                <h2 class="section-title">æ‰€æœ‰åˆ†ç±»</h2>
                 <div class="categories-grid expanded">
                     <category-card 
-                        title="ÊýÂëµç×Ó" 
+                        title="æ•°ç ç”µå­" 
                         icon="phone" 
                         color="var(--blue)">
                     </category-card>
                     <category-card 
-                        title="Ê³Æ·ÉúÏÊ" 
+                        title="é£Ÿå“ç”Ÿé²œ" 
                         icon="shopping-bag" 
                         color="var(--green)">
                     </category-card>
                     <category-card 
-                        title="¸ß¶ËÀñºÐ" 
+                        title="é«˜ç«¯ç¤¼ç›’" 
                         icon="gift" 
                         color="var(--gold)">
                     </category-card>
                     <category-card 
-                        title="¼Ò¾ÓÉú»î" 
+                        title="å®¶å±…ç”Ÿæ´»" 
                         icon="home" 
                         color="var(--teal)">
                     </category-card>
                     <category-card 
-                        title="Ê±ÉÐÅäÊÎ" 
+                        title="æ—¶å°šé…é¥°" 
                         icon="watch" 
                         color="var(--purple)">
                     </category-card>
                     <category-card 
-                        title="ÃÀ×±»¤·ô" 
+                        title="ç¾Žå¦†æŠ¤è‚¤" 
                         icon="heart" 
                         color="var(--pink)">
                     </category-card>
                     <category-card 
-                        title="½¡¿µÑøÉú" 
+                        title="å¥åº·å…»ç”Ÿ" 
                         icon="activity" 
                         color="var(--red)">
                     </category-card>
                     <category-card 
-                        title="ÂÃÓÎÌåÑé" 
+                        title="æ—…æ¸¸ä½“éªŒ" 
                         icon="globe" 
                         color="var(--indigo)">
                     </category-card>
@@ -81,60 +81,60 @@
         <!-- Featured Gifts by Category -->
         <section class="featured-gifts">
             <div class="container">
-                <h2 class="section-title">ÈÈÃÅÀñÆ·</h2>
-                <h3 class="subcategory-title">ÊýÂëµç×Ó</h3>
+                <h2 class="section-title">çƒ­é—¨ç¤¼å“</h2>
+                <h3 class="subcategory-title">æ•°ç ç”µå­</h3>
                 <div class="gifts-grid">
                     <gift-card 
                         title="iPhone 15 Pro" 
                         value="8000" 
                         image="http://static.photos/technology/640x360/2" 
-                        category="ÊýÂëµç×Ó">
+                        category="æ•°ç ç”µå­">
                     </gift-card>
                     <gift-card 
-                        title="»ªÎª MateBook X Pro" 
+                        title="åŽä¸º MateBook X Pro" 
                         value="12000" 
                         image="http://static.photos/technology/640x360/5" 
-                        category="ÊýÂëµç×Ó">
+                        category="æ•°ç ç”µå­">
                     </gift-card>
                     <gift-card 
-                        title="Ë÷Äá PlayStation 5" 
+                        title="ç´¢å°¼ PlayStation 5" 
                         value="4000" 
                         image="http://static.photos/technology/640x360/6" 
-                        category="ÊýÂëµç×Ó">
+                        category="æ•°ç ç”µå­">
                     </gift-card>
                     <gift-card 
-                        title="Bose QuietComfort ¶ú»ú" 
+                        title="Bose QuietComfort è€³æœº" 
                         value="2800" 
                         image="http://static.photos/technology/640x360/7" 
-                        category="ÊýÂëµç×Ó">
+                        category="æ•°ç ç”µå­">
                     </gift-card>
                 </div>
 
-                <h3 class="subcategory-title">¸ß¶ËÀñºÐ</h3>
+                <h3 class="subcategory-title">é«˜ç«¯ç¤¼ç›’</h3>
                 <div class="gifts-grid">
                     <gift-card 
-                        title="·ÉÌìÃ©Ì¨ÀñºÐ" 
+                        title="é£žå¤©èŒ…å°ç¤¼ç›’" 
                         value="3000" 
                         image="http://static.photos/food/640x360/1" 
-                        category="¸ß¶ËÀñºÐ">
+                        category="é«˜ç«¯ç¤¼ç›’">
                     </gift-card>
                     <gift-card 
-                        title="·¨¹úºì¾ÆÌ××°" 
+                        title="æ³•å›½çº¢é…’å¥—è£…" 
                         value="2500" 
                         image="http://static.photos/food/640x360/8" 
-                        category="¸ß¶ËÀñºÐ">
+                        category="é«˜ç«¯ç¤¼ç›’">
                     </gift-card>
                     <gift-card 
-                        title="ÑàÎÑ×Ì²¹ÀñºÐ" 
+                        title="ç‡•çªæ»‹è¡¥ç¤¼ç›’" 
                         value="1800" 
                         image="http://static.photos/food/640x360/9" 
-                        category="¸ß¶ËÀñºÐ">
+                        category="é«˜ç«¯ç¤¼ç›’">
                     </gift-card>
                     <gift-card 
-                        title="ÈÕ±¾½ø¿ÚºÍÅ£ÀñºÐ" 
+                        title="æ—¥æœ¬è¿›å£å’Œç‰›ç¤¼ç›’" 
                         value="3200" 
                         image="http://static.photos/food/640x360/10" 
-                        category="¸ß¶ËÀñºÐ">
+                        category="é«˜ç«¯ç¤¼ç›’">
                     </gift-card>
                 </div>
             </div>
@@ -143,6 +143,6 @@
 
     <custom-footer></custom-footer>
     
-    <script src="script.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

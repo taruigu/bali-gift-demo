@@ -1,9 +1,9 @@
 class GiftCard extends HTMLElement {
   connectedCallback() {
-    const title = this.getAttribute('title') || 'ÀñÆ·';
+    const title = this.getAttribute('title') || 'ç¤¼å“';
     const value = this.getAttribute('value') || '0';
     const image = this.getAttribute('image') || 'http://static.photos/gradient/640x360/1';
-    const category = this.getAttribute('category') || 'ÆäËû';
+    const category = this.getAttribute('category') || 'å…¶ä»–';
     
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
@@ -95,11 +95,11 @@ class GiftCard extends HTMLElement {
           <h3 class="gift-title">${title}</h3>
           
           <div class="gift-value">
-            <span class="value-label">ËùĞèÀñÆ·¿¨</span>
-            <span class="value-amount">£¤${value}</span>
+            <span class="value-label">æ‰€éœ€ç¤¼å“å¡</span>
+            <span class="value-amount">ï¿¥${value}</span>
           </div>
           
-          <button class="exchange-btn">Á¢¼´¶Ò»»</button>
+          <button class="exchange-btn">ç«‹å³å…‘æ¢</button>
         </div>
       </div>
     `;

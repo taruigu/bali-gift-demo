@@ -1,6 +1,6 @@
 class CategoryCard extends HTMLElement {
   connectedCallback() {
-    const title = this.getAttribute('title') || '·ÖÀà';
+    const title = this.getAttribute('title') || 'åˆ†ç±»';
     const icon = this.getAttribute('icon') || 'box';
     const color = this.getAttribute('color') || 'var(--blue)';
     

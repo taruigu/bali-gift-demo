@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const value = card.querySelector('.value-amount').textContent;
             
             // In a real app, this would redirect to the exchange page
-            alert(`ÄúÕıÔÚ¶Ò»» ${title} (${value})`);
+            alert(`æ‚¨æ­£åœ¨å…‘æ¢ ${title} (${value})`);
         }
     });
     
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const query = searchInput.value.trim();
             if (query) {
                 // In a real app, this would redirect to search results
-                alert(`ËÑË÷: ${query}`);
+                alert(`æœç´¢: ${query}`);
             }
         });
         
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const query = searchInput.value.trim();
                 if (query) {
                     // In a real app, this would redirect to search results
-                    alert(`ËÑË÷: ${query}`);
+                    alert(`æœç´¢: ${query}`);
                 }
             }
         });

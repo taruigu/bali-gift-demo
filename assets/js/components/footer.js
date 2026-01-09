@@ -105,10 +105,10 @@ class CustomFooter extends HTMLElement {
                 <path d="M3 12L12 17L21 12" stroke="var(--gold)" stroke-width="2"/>
                 <path d="M3 17L12 22L21 17" stroke="var(--gold)" stroke-width="2"/>
               </svg>
-              <span>°ÅÀûÀñÆ·</span>
+              <span>èŠ­åˆ©ç¤¼å“</span>
             </div>
             <p class="footer-description">
-              ¸ß¶ËÀñÆ·×¨Êô¶Ò»»Æ½Ì¨£¬ÆóÒµÀñÔùÊ×Ñ¡£¬ÎªÄúÌá¹©×ð¹óÌåÑé¡£
+              é«˜ç«¯ç¤¼å“ä¸“å±žå…‘æ¢å¹³å°ï¼Œä¼ä¸šç¤¼èµ é¦–é€‰ï¼Œä¸ºæ‚¨æä¾›å°Šè´µä½“éªŒã€‚
             </p>
             <div class="social-links">
               <a href="#" class="social-link">
@@ -131,38 +131,38 @@ class CustomFooter extends HTMLElement {
           </div>
           
           <div class="footer-col">
-            <h3 class="footer-title">¿ìËÙÁ´½Ó</h3>
+            <h3 class="footer-title">å¿«é€Ÿé“¾æŽ¥</h3>
             <ul class="footer-links">
-              <li class="footer-link"><a href="/">Ê×Ò³</a></li>
-              <li class="footer-link"><a href="/categories.html">ÀñÆ··ÖÀà</a></li>
-<li class="footer-link"><a href="/business">ÆóÒµ·þÎñ</a></li>
-              <li class="footer-link"><a href="/about.html">¹ØÓÚÎÒÃÇ</a></li>
+              <li class="footer-link"><a href="/">é¦–é¡µ</a></li>
+              <li class="footer-link"><a href="/categories.html">ç¤¼å“åˆ†ç±»</a></li>
+<li class="footer-link"><a href="/business">ä¼ä¸šæœåŠ¡</a></li>
+              <li class="footer-link"><a href="/about.html">å…³äºŽæˆ‘ä»¬</a></li>
 </ul>
           </div>
           
           <div class="footer-col">
-            <h3 class="footer-title">°ïÖúÖÐÐÄ</h3>
+            <h3 class="footer-title">å¸®åŠ©ä¸­å¿ƒ</h3>
             <ul class="footer-links">
-              <li class="footer-link"><a href="/faq">³£¼ûÎÊÌâ</a></li>
-              <li class="footer-link"><a href="/contact">ÁªÏµÎÒÃÇ</a></li>
-              <li class="footer-link"><a href="/shipping">ÅäËÍÐÅÏ¢</a></li>
-              <li class="footer-link"><a href="/returns">ÍË»»Õþ²ß</a></li>
+              <li class="footer-link"><a href="/faq">å¸¸è§é—®é¢˜</a></li>
+              <li class="footer-link"><a href="/contact">è”ç³»æˆ‘ä»¬</a></li>
+              <li class="footer-link"><a href="/shipping">é…é€ä¿¡æ¯</a></li>
+              <li class="footer-link"><a href="/returns">é€€æ¢æ”¿ç­–</a></li>
             </ul>
           </div>
           
           <div class="footer-col">
-            <h3 class="footer-title">ÁªÏµÎÒÃÇ</h3>
+            <h3 class="footer-title">è”ç³»æˆ‘ä»¬</h3>
             <ul class="footer-links">
-              <li class="footer-link">¿Í·þµç»°: 400-888-8888</li>
-              <li class="footer-link">ÓÊÏä: service@baligift.com</li>
-              <li class="footer-link">¹¤×÷Ê±¼ä: 9:00-18:00</li>
-              <li class="footer-link">µØÖ·: ÉÏº£ÊÐÆÖ¶«ÐÂÇøÕÅ½­¸ß¿Æ¼¼Ô°Çø</li>
+              <li class="footer-link">å®¢æœç”µè¯: 400-888-8888</li>
+              <li class="footer-link">é‚®ç®±: service@baligift.com</li>
+              <li class="footer-link">å·¥ä½œæ—¶é—´: 9:00-18:00</li>
+              <li class="footer-link">åœ°å€: ä¸Šæµ·å¸‚æµ¦ä¸œæ–°åŒºå¼ æ±Ÿé«˜ç§‘æŠ€å›­åŒº</li>
             </ul>
           </div>
         </div>
         
         <div class="footer-bottom">
-          <p>? 2023 °ÅÀûÀñÆ·¶Ò»»Æ½Ì¨. ±£ÁôËùÓÐÈ¨Àû. »¦ICP±¸12345678ºÅ</p>
+          <p>? 2023 èŠ­åˆ©ç¤¼å“å…‘æ¢å¹³å°. ä¿ç•™æ‰€æœ‰æƒåˆ©. æ²ªICPå¤‡12345678å·</p>
         </div>
       </div>
     `;
