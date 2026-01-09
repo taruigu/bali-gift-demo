@@ -12,6 +12,45 @@
     <script src="../assets/js/components/category-card.js"></script>
 </head>
 <body>
+    <!-- Navbar Templates -->
+    <template id="navbar-template">
+        <span id="logo-text">芭利礼品</span>
+        <a id="nav-link-home" href="/">首页</a>
+        <a id="nav-link-categories" href="/categories.html">礼品分类</a>
+        <a id="nav-link-business" href="/business.html">企业服务</a>
+        <a id="nav-link-about" href="/about.html">关于我们</a>
+        <span id="cart-label">购物车</span>
+        <span id="user-label">登录</span>
+    </template>
+
+    <!-- Gift Card Templates -->
+    <template id="gift-card-template">
+        <span id="gift-value-label">所需礼品卡</span>
+        <button id="gift-exchange-btn">立即兑换</button>
+    </template>
+
+    <!-- Footer Templates -->
+    <template id="footer-template">
+        <span id="footer-logo-text">芭利礼品</span>
+        <p id="footer-description">高端礼品专属兑换平台，企业礼赠首选，为您提供尊贵体验。</p>
+        <h3 id="footer-quick-links">快速链接</h3>
+        <a id="footer-link-home" href="/">首页</a>
+        <a id="footer-link-categories" href="/categories.html">礼品分类</a>
+        <a id="footer-link-business" href="/business">企业服务</a>
+        <a id="footer-link-about" href="/about.html">关于我们</a>
+        <h3 id="footer-help-center">帮助中心</h3>
+        <a id="footer-link-faq" href="/faq">常见问题</a>
+        <a id="footer-link-contact" href="/contact">联系我们</a>
+        <a id="footer-link-shipping" href="/shipping">配送信息</a>
+        <a id="footer-link-returns" href="/returns">退换政策</a>
+        <h3 id="footer-contact-us">联系我们</h3>
+        <span id="footer-phone">客服电话: 400-888-8888</span>
+        <span id="footer-email">邮箱: service@baligift.com</span>
+        <span id="footer-time">工作时间: 9:00-18:00</span>
+        <span id="footer-address">地址: 上海市浦东新区张江高科技园区</span>
+        <p id="footer-copyright">© 2023 芭利礼品兑换平台. 保留所有权利. 沪ICP备12345678号</p>
+    </template>
+
     <custom-navbar></custom-navbar>
     
     <main>
@@ -143,6 +182,10 @@
 
     <custom-footer></custom-footer>
     
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/footer.js"></script>
+    <script src="../assets/js/components/gift-card.js"></script>
+    <script src="../assets/js/components/category-card.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>

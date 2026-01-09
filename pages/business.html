@@ -12,6 +12,39 @@
     <script src="../assets/js/components/category-card.js"></script>
 </head>
 <body>
+    <!-- Navbar Templates -->
+    <template id="navbar-template">
+        <span id="logo-text">芭利礼品</span>
+        <a id="nav-link-home" href="/">首页</a>
+        <a id="nav-link-categories" href="/categories.html">礼品分类</a>
+        <a id="nav-link-business" href="/business.html">企业服务</a>
+        <a id="nav-link-about" href="/about.html">关于我们</a>
+        <span id="cart-label">购物车</span>
+        <span id="user-label">登录</span>
+    </template>
+
+    <!-- Footer Templates -->
+    <template id="footer-template">
+        <span id="footer-logo-text">芭利礼品</span>
+        <p id="footer-description">高端礼品专属兑换平台，企业礼赠首选，为您提供尊贵体验。</p>
+        <h3 id="footer-quick-links">快速链接</h3>
+        <a id="footer-link-home" href="/">首页</a>
+        <a id="footer-link-categories" href="/categories.html">礼品分类</a>
+        <a id="footer-link-business" href="/business">企业服务</a>
+        <a id="footer-link-about" href="/about.html">关于我们</a>
+        <h3 id="footer-help-center">帮助中心</h3>
+        <a id="footer-link-faq" href="/faq">常见问题</a>
+        <a id="footer-link-contact" href="/contact">联系我们</a>
+        <a id="footer-link-shipping" href="/shipping">配送信息</a>
+        <a id="footer-link-returns" href="/returns">退换政策</a>
+        <h3 id="footer-contact-us">联系我们</h3>
+        <span id="footer-phone">客服电话: 400-888-8888</span>
+        <span id="footer-email">邮箱: service@baligift.com</span>
+        <span id="footer-time">工作时间: 9:00-18:00</span>
+        <span id="footer-address">地址: 上海市浦东新区张江高科技园区</span>
+        <p id="footer-copyright">© 2023 芭利礼品兑换平台. 保留所有权利. 沪ICP备12345678号</p>
+    </template>
+
     <custom-navbar></custom-navbar>
     
     <main>
@@ -32,25 +65,41 @@
                 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">??</div>
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 4V3C7 2.45 7.45 2 8 2H9C9.55 2 10 2.45 10 3V4H14V3C14 2.45 14.45 2 15 2H16C16.55 2 17 2.45 17 3V4H19C20.1 4 21 4.9 21 6V10H3V6C3 4.9 3.9 4 5 4H7ZM3 12H21V20C21 21.1 20.1 22 19 22H5C3.9 22 3 21.1 3 20V12ZM12 16C11.45 16 11 15.55 11 15C11 14.45 11.45 14 12 14C12.55 14 13 14.45 13 15C13 15.55 12.55 16 12 16ZM8 16C7.45 16 7 15.55 7 15C7 14.45 7.45 14 8 14C8.55 14 9 14.45 9 15C9 15.55 8.55 16 8 16ZM16 16C15.45 16 15 15.55 15 15C15 14.45 15.45 14 16 14C16.55 14 17 14.45 17 15C17 15.55 16.55 16 16 16Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>批量礼品卡采购</h3>
                         <p>为企业提供专属折扣的批量礼品卡采购方案，可用于员工福利、客户礼品等场景。</p>
                     </div>
                     
                     <div class="service-card">
-                        <div class="service-icon">??</div>
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 13H5V7H19M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 12C10.9 12 10 12.9 10 14C10 15.1 10.9 16 12 16C13.1 16 14 15.1 14 14C14 12.9 13.1 12 12 12Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>个性化定制</h3>
                         <p>支持礼品卡个性化设计及专属企业兑换页面，强化品牌印象。</p>
                     </div>
                     
                     <div class="service-card">
-                        <div class="service-icon">??</div>
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>数据报表</h3>
                         <p>提供详细的兑换数据统计报表，帮助企业分析礼品使用情况。</p>
                     </div>
                     
                     <div class="service-card">
-                        <div class="service-icon">??</div>
+                        <div class="service-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C13.1 12 14 11.1 14 10C14 8.9 13.1 8 12 8C10.9 8 10 8.9 10 10C10 11.1 10.9 12 12 12ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 13C10.34 13 8.74 13.63 7.64 14.76C7.14 15.26 7.55 16.16 8.19 16.16C8.5 16.16 8.78 16.04 8.97 15.84C9.83 14.98 10.98 14.5 12 14.5C13.02 14.5 14.17 14.98 15.03 15.84C15.22 16.04 15.5 16.16 15.81 16.16C16.45 16.16 16.86 15.26 16.36 14.76C15.26 13.63 13.66 13 12 13Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>企业账户管理</h3>
                         <p>专属企业账户管理后台，方便批量发放和管理礼品卡。</p>
                     </div>
@@ -104,24 +153,28 @@
                     </div>
                     
                     <form>
-                        <div class="form-group">
-                            <label for="company">公司名称</label>
-                            <input type="text" id="company" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">公司名称</label>
+                                <input type="text" id="company" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">联系人</label>
+                                <input type="text" id="name" required>
+                            </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="name">联系人</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">联系电话</label>
-                            <input type="tel" id="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">电子邮箱</label>
-                            <input type="email" id="email" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">联系电话</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">电子邮箱</label>
+                                <input type="email" id="email" required>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -138,6 +191,10 @@
 
     <custom-footer></custom-footer>
     
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/footer.js"></script>
+    <script src="../assets/js/components/gift-card.js"></script>
+    <script src="../assets/js/components/category-card.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>

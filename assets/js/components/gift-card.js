@@ -5,6 +5,15 @@ class GiftCard extends HTMLElement {
     const image = this.getAttribute('image') || 'http://static.photos/gradient/640x360/1';
     const category = this.getAttribute('category') || '其他';
     
+    // Get text content from template
+    const template = document.querySelector('#gift-card-template');
+    if (!template) {
+      console.error('Gift card template not found');
+      return;
+    }
+    const valueLabel = template.content.querySelector('#gift-value-label')?.textContent || '所需礼品卡';
+    const exchangeBtn = template.content.querySelector('#gift-exchange-btn')?.textContent || '立即兑换';
+    
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
@@ -95,11 +104,11 @@ class GiftCard extends HTMLElement {
           <h3 class="gift-title">${title}</h3>
           
           <div class="gift-value">
-            <span class="value-label">所需礼品卡</span>
+            <span class="value-label">${valueLabel}</span>
             <span class="value-amount">￥${value}</span>
           </div>
           
-          <button class="exchange-btn">立即兑换</button>
+          <button class="exchange-btn">${exchangeBtn}</button>
         </div>
       </div>
     `;

@@ -6,149 +6,49 @@
     <title>芭利礼品兑换平台</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/components/navbar.js"></script>
-    <script src="assets/js/components/footer.js"></script>
-    <script src="assets/js/components/gift-card.js"></script>
-    <script src="assets/js/components/category-card.js"></script>
 </head>
 <body>
-    <!-- custom-navbar></custom-navbar -->
+    <!-- Navbar Templates -->
     <template id="navbar-template">
-      <style>
-        :host {
-          display: block;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 1000;
-          background-color: var(--dark-blue);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        .navbar {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 20px 0;
-        }
-    
-        .logo {
-          display: flex;
-          align-items: center;
-          color: white;
-          text-decoration: none;
-          font-size: 1.5rem;
-          font-weight: 600;
-        }
-    
-        .logo span {
-          margin-left: 10px;
-        }
-    
-        .nav-links {
-          display: flex;
-          gap: 30px;
-        }
-    
-        .nav-link {
-          color: rgba(255, 255, 255, 0.8);
-          text-decoration: none;
-          font-weight: 500;
-          transition: color 0.3s;
-          position: relative;
-        }
-    
-        .nav-link:hover {
-          color: white;
-        }
-    
-        .nav-link.active {
-          color: var(--gold);
-        }
-    
-        .nav-link.active::after {
-          content: '';
-          position: absolute;
-          bottom: -5px;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: var(--gold);
-        }
-    
-        .nav-actions {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-        }
-    
-        .action-btn {
-          color: white;
-          background: none;
-          border: none;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          font-weight: 500;
-        }
-    
-        .user-avatar {
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          background-color: var(--gold);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--dark-blue);
-          font-weight: bold;
-          cursor: pointer;
-        }
-    
-        @media (max-width: 768px) {
-          .nav-links {
-            display: none;
-          }
-        }
-      </style>
-    
-      <div class="container">
-        <nav class="navbar">
-          <a href="/" class="logo">
-            <!-- SVG 不动 -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2L3 7L12 12L21 7L12 2Z" fill="var(--gold)"/>
-              <path d="M3 12L12 17L21 12" stroke="var(--gold)" stroke-width="2"/>
-              <path d="M3 17L12 22L21 17" stroke="var(--gold)" stroke-width="2"/>
-            </svg>
-            <span>芭利礼品</span>
-          </a>
-    
-          <div class="nav-links">
-            <a href="/" class="nav-link" data-path="/">首页</a>
-            <a href="/categories.html" class="nav-link" data-path="categories">礼品分类</a>
-            <a href="/business.html" class="nav-link" data-path="business">企业服务</a>
-            <a href="/about.html" class="nav-link" data-path="about">关于我们</a>
-          </div>
-    
-          <div class="nav-actions">
-            <button class="action-btn">
-              <!-- 搜索 icon -->
-            </button>
-    
-            <button class="action-btn">
-              <!-- 购物车 icon -->
-              <span>购物车</span>
-            </button>
-    
-            <div class="user-avatar">登</div>
-          </div>
-        </nav>
-      </div>
+        <span id="logo-text">芭利礼品</span>
+        <a id="nav-link-home" href="/">首页</a>
+        <a id="nav-link-categories" href="/categories.html">礼品分类</a>
+        <a id="nav-link-business" href="/business.html">企业服务</a>
+        <a id="nav-link-about" href="/about.html">关于我们</a>
+        <span id="cart-label">购物车</span>
+        <span id="user-label">登录</span>
     </template>
 
+    <!-- Gift Card Templates -->
+    <template id="gift-card-template">
+        <span id="gift-value-label">所需礼品卡</span>
+        <button id="gift-exchange-btn">立即兑换</button>
+    </template>
+
+    <!-- Footer Templates -->
+    <template id="footer-template">
+        <span id="footer-logo-text">芭利礼品</span>
+        <p id="footer-description">高端礼品专属兑换平台，企业礼赠首选，为您提供尊贵体验。</p>
+        <h3 id="footer-quick-links">快速链接</h3>
+        <a id="footer-link-home" href="/">首页</a>
+        <a id="footer-link-categories" href="/categories.html">礼品分类</a>
+        <a id="footer-link-business" href="/business">企业服务</a>
+        <a id="footer-link-about" href="/about.html">关于我们</a>
+        <h3 id="footer-help-center">帮助中心</h3>
+        <a id="footer-link-faq" href="/faq">常见问题</a>
+        <a id="footer-link-contact" href="/contact">联系我们</a>
+        <a id="footer-link-shipping" href="/shipping">配送信息</a>
+        <a id="footer-link-returns" href="/returns">退换政策</a>
+        <h3 id="footer-contact-us">联系我们</h3>
+        <span id="footer-phone">客服电话: 400-888-8888</span>
+        <span id="footer-email">邮箱: service@baligift.com</span>
+        <span id="footer-time">工作时间: 9:00-18:00</span>
+        <span id="footer-address">地址: 上海市浦东新区张江高科技园区</span>
+        <p id="footer-copyright">© 2023 芭利礼品兑换平台. 保留所有权利. 沪ICP备12345678号</p>
+    </template>
+
+    <custom-navbar></custom-navbar>
+    
     <main>
         <!-- Hero Section -->
         <section class="hero">
@@ -231,17 +131,29 @@
             <div class="container">
                 <div class="benefits-grid">
                     <div class="benefit-card">
-                        <div class="benefit-icon">?</div>
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 1C6.48 1 2 5.48 2 11C2 16.52 6.48 21 12 21C17.52 21 22 16.52 22 11C22 5.48 17.52 1 12 1ZM12 20C7.03 20 3 15.97 3 11C3 6.03 7.03 2 12 2C16.97 2 21 6.03 21 11C21 15.97 16.97 20 12 20ZM16.89 9.47L10.59 15.77C10.2 16.16 9.56 16.16 9.17 15.77L7.11 13.71C6.72 13.32 6.72 12.69 7.11 12.3C7.5 11.91 8.13 11.91 8.52 12.3L9.88 13.66L15.48 8.06C15.87 7.67 16.5 7.67 16.89 8.06C17.28 8.45 17.28 9.08 16.89 9.47Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>正品保障</h3>
                         <p>所有礼品官方渠道直供</p>
                     </div>
                     <div class="benefit-card">
-                        <div class="benefit-icon">?</div>
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 13H5V7H19M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 12C10.9 12 10 12.9 10 14C10 15.1 10.9 16 12 16C13.1 16 14 15.1 14 14C14 12.9 13.1 12 12 12Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>全国配送</h3>
                         <p>顺丰冷链直达</p>
                     </div>
                     <div class="benefit-card">
-                        <div class="benefit-icon">???</div>
+                        <div class="benefit-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM15.5 11C16.33 11 17 10.33 17 9.5C17 8.67 16.33 8 15.5 8C14.67 8 14 8.67 14 9.5C14 10.33 14.67 11 15.5 11ZM8.5 11C9.33 11 10 10.33 10 9.5C10 8.67 9.33 8 8.5 8C7.67 8 7 8.67 7 9.5C7 10.33 7.67 11 8.5 11ZM12 17.5C13.66 17.5 15.08 16.84 16.04 15.77C16.3 15.54 16.28 15.15 16 14.92C15.72 14.69 15.33 14.71 15.08 14.94C14.35 15.77 13.25 16.5 12 16.5C10.75 16.5 9.65 15.77 8.92 14.94C8.67 14.71 8.28 14.69 8 14.92C7.72 15.15 7.7 15.54 7.96 15.77C8.92 16.84 10.34 17.5 12 17.5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
                         <h3>售后无忧</h3>
                         <p>7天无理由退换</p>
                     </div>
@@ -252,8 +164,10 @@
 
     <custom-footer></custom-footer>
     
+    <script src="assets/js/components/navbar.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+    <script src="assets/js/components/gift-card.js"></script>
+    <script src="assets/js/components/category-card.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>
-

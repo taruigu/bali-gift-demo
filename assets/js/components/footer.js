@@ -1,5 +1,35 @@
 class CustomFooter extends HTMLElement {
   connectedCallback() {
+    // Get text content from template
+    const template = document.querySelector('#footer-template');
+    if (!template) {
+      console.error('Footer template not found');
+      return;
+    }
+    
+    // Determine if we're in pages folder
+    const isInPages = window.location.pathname.includes('/pages/') || document.currentScript?.src.includes('/pages/');
+    const basePath = isInPages ? '..' : '.';
+    
+    const footerLogoText = template.content.querySelector('#footer-logo-text')?.textContent || '芭利礼品';
+    const footerDescription = template.content.querySelector('#footer-description')?.textContent || '';
+    const footerQuickLinks = template.content.querySelector('#footer-quick-links')?.textContent || '快速链接';
+    const footerLinkHome = template.content.querySelector('#footer-link-home')?.textContent || '首页';
+    const footerLinkCategories = template.content.querySelector('#footer-link-categories')?.textContent || '礼品分类';
+    const footerLinkBusiness = template.content.querySelector('#footer-link-business')?.textContent || '企业服务';
+    const footerLinkAbout = template.content.querySelector('#footer-link-about')?.textContent || '关于我们';
+    const footerHelpCenter = template.content.querySelector('#footer-help-center')?.textContent || '帮助中心';
+    const footerLinkFaq = template.content.querySelector('#footer-link-faq')?.textContent || '常见问题';
+    const footerLinkContact = template.content.querySelector('#footer-link-contact')?.textContent || '联系我们';
+    const footerLinkShipping = template.content.querySelector('#footer-link-shipping')?.textContent || '配送信息';
+    const footerLinkReturns = template.content.querySelector('#footer-link-returns')?.textContent || '退换政策';
+    const footerContactUs = template.content.querySelector('#footer-contact-us')?.textContent || '联系我们';
+    const footerPhone = template.content.querySelector('#footer-phone')?.textContent || '客服电话: 400-888-8888';
+    const footerEmail = template.content.querySelector('#footer-email')?.textContent || '邮箱: service@baligift.com';
+    const footerTime = template.content.querySelector('#footer-time')?.textContent || '工作时间: 9:00-18:00';
+    const footerAddress = template.content.querySelector('#footer-address')?.textContent || '地址: 上海市浦东新区张江高科技园区';
+    const footerCopyright = template.content.querySelector('#footer-copyright')?.textContent || '© 2023 芭利礼品兑换平台. 保留所有权利. 沪ICP备12345678号';
+    
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
@@ -20,6 +50,7 @@ class CustomFooter extends HTMLElement {
         .footer-logo {
           display: flex;
           align-items: center;
+          margin-top: 20px;
           margin-bottom: 20px;
           font-size: 1.5rem;
           font-weight: 600;
@@ -39,6 +70,7 @@ class CustomFooter extends HTMLElement {
           font-size: 1.1rem;
           font-weight: 600;
           margin-bottom: 20px;
+          margin-left: 40px;
           color: white;
         }
         
@@ -96,7 +128,7 @@ class CustomFooter extends HTMLElement {
         }
       </style>
       
-      <div class="container">
+      <div class="container" style="padding: 0 40px;">
         <div class="footer-content">
           <div class="footer-col">
             <div class="footer-logo">
@@ -105,10 +137,10 @@ class CustomFooter extends HTMLElement {
                 <path d="M3 12L12 17L21 12" stroke="var(--gold)" stroke-width="2"/>
                 <path d="M3 17L12 22L21 17" stroke="var(--gold)" stroke-width="2"/>
               </svg>
-              <span>芭利礼品</span>
+              <span>${footerLogoText}</span>
             </div>
             <p class="footer-description">
-              高端礼品专属兑换平台，企业礼赠首选，为您提供尊贵体验。
+              ${footerDescription}
             </p>
             <div class="social-links">
               <a href="#" class="social-link">
@@ -131,38 +163,38 @@ class CustomFooter extends HTMLElement {
           </div>
           
           <div class="footer-col">
-            <h3 class="footer-title">快速链接</h3>
+            <h3 class="footer-title">${footerQuickLinks}</h3>
             <ul class="footer-links">
-              <li class="footer-link"><a href="/">首页</a></li>
-              <li class="footer-link"><a href="/categories.html">礼品分类</a></li>
-<li class="footer-link"><a href="/business">企业服务</a></li>
-              <li class="footer-link"><a href="/about.html">关于我们</a></li>
+              <li class="footer-link"><a href="${basePath}/index.html">${footerLinkHome}</a></li>
+              <li class="footer-link"><a href="${basePath}/pages/categories.html">${footerLinkCategories}</a></li>
+<li class="footer-link"><a href="${basePath}/pages/business.html">${footerLinkBusiness}</a></li>
+              <li class="footer-link"><a href="${basePath}/pages/about.html">${footerLinkAbout}</a></li>
 </ul>
           </div>
           
           <div class="footer-col">
-            <h3 class="footer-title">帮助中心</h3>
+            <h3 class="footer-title">${footerHelpCenter}</h3>
             <ul class="footer-links">
-              <li class="footer-link"><a href="/faq">常见问题</a></li>
-              <li class="footer-link"><a href="/contact">联系我们</a></li>
-              <li class="footer-link"><a href="/shipping">配送信息</a></li>
-              <li class="footer-link"><a href="/returns">退换政策</a></li>
+              <li class="footer-link"><a href="${basePath}/pages/faq.html">${footerLinkFaq}</a></li>
+              <li class="footer-link"><a href="${basePath}/pages/contact.html">${footerLinkContact}</a></li>
+              <li class="footer-link"><a href="${basePath}/pages/shipping.html">${footerLinkShipping}</a></li>
+              <li class="footer-link"><a href="${basePath}/pages/returns.html">${footerLinkReturns}</a></li>
             </ul>
           </div>
           
           <div class="footer-col">
-            <h3 class="footer-title">联系我们</h3>
+            <h3 class="footer-title">${footerContactUs}</h3>
             <ul class="footer-links">
-              <li class="footer-link">客服电话: 400-888-8888</li>
-              <li class="footer-link">邮箱: service@baligift.com</li>
-              <li class="footer-link">工作时间: 9:00-18:00</li>
-              <li class="footer-link">地址: 上海市浦东新区张江高科技园区</li>
+              <li class="footer-link">${footerPhone}</li>
+              <li class="footer-link">${footerEmail}</li>
+              <li class="footer-link">${footerTime}</li>
+              <li class="footer-link">${footerAddress}</li>
             </ul>
           </div>
         </div>
         
         <div class="footer-bottom">
-          <p>? 2023 芭利礼品兑换平台. 保留所有权利. 沪ICP备12345678号</p>
+          <p>${footerCopyright}</p>
         </div>
       </div>
     `;

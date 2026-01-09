@@ -39,10 +39,11 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--dark-blue), #1a365d);
     color: var(--white);
-    padding: 100px 0;
+    padding: 80px 0 60px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .hero::before {
@@ -250,9 +251,8 @@ body {
 
 .form-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 40px;
 }
 
 .form-intro h2 {
@@ -267,6 +267,12 @@ body {
 
 form {
     display: grid;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -297,11 +303,13 @@ form {
     background-color: var(--gold);
     color: var(--dark-blue);
     border: none;
-    padding: 15px;
+    padding: 12px 40px;
     font-weight: 600;
+    font-size: large;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: fit-content;
     margin-top: 10px;
 }
 
